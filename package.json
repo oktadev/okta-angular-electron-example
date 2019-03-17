@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "ng build --base-href ./ && tsc --p electron && electron electron/dist/main.js"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +20,11 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@openid/appauth": "^1.2.2",
+    "@types/jquery": "^3.3.29",
     "core-js": "^2.5.4",
+    "electron": "^4.1.0",
+    "jquery": "^3.3.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
